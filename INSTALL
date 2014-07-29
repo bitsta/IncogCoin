@@ -1,0 +1,9 @@
+Building IncogCoin
+
+See doc/readme-qt.rst for instructions on building IncogCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of IncogCoin.
+
+See doc/build-*.txt for instructions on building IncogCoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of IncogCoin.
