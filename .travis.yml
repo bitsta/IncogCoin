@@ -12,7 +12,6 @@ install:
 script:
  - make -f makefile.unix -j 5
  - cd ..
- - make -j 5
  
 
 notifications:
