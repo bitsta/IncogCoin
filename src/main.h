@@ -38,7 +38,10 @@ static const int64_t MIN_TX_FEE = 1000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 17000000 * COIN;
 static const int64_t COIN_YEAR_REWARD = 200 * CENT; // 200% per year
+static const int64_t COIN_YEAR_REWARD_V2 = 200 * CENT; // 200% per year
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 2 * COIN;	// 200% annual interest
+static const int64_t MAX_MINT_PROOF_OF_STAKEV2 = 0.05 * COIN; // 5% new PoS reward
+static const unsigned int SWITCH_TIME_V2 = 1408320000; // Human time (GMT): Mon, 18 Aug 2014 00:00:00 GMT
 static const int MODIFIER_INTERVAL_SWITCH = 2000;
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
