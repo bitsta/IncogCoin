@@ -979,11 +979,11 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     int64_t nSubsidy = 0;
 	
-    if ( pindexBest->nHeight > SWITCH_BOCK_V2 ){
-    nSubsidy = GetProofOfStakeReward_V2(int64_t nCoinAge, int64_t nFees);
+    if ( pindexBest->nHeight > SWITCH_BLOCK_V2 ){
+    nSubsidy = GetProofOfStakeReward_V2(nCoinAge, nFees);
     }
     else{
-    nSubsidy = GetProofOfStakeReward_V1(int64_t nCoinAge, int64_t nFees);
+    nSubsidy = GetProofOfStakeReward_V1(nCoinAge, nFees);
     }
     
     return nSubsidy;
