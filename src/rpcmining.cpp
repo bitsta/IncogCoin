@@ -69,7 +69,7 @@ Value getmininginfo(const Array& params, bool fHelp)
     obj.push_back(Pair("stakeweight", weight));
 
     if( pindexBest->nHeight > SWITCH_BLOCK_V2 ){
-    obj.push_back(Pair("stakeinterest",    (uint64_t)COIN_YEAR_REWARDV2));  
+    obj.push_back(Pair("stakeinterest",    (uint64_t)COIN_YEAR_REWARD_V2));  
     }
     else{
     obj.push_back(Pair("stakeinterest",    (uint64_t)COIN_YEAR_REWARD));   
