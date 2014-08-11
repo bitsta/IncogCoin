@@ -120,8 +120,8 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 int64_t GetProofOfWorkReward(int64_t nFees);
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees);
 //PoS v2: new getstakereward() fcts
-int64_t GetProofOfStakeReward_V1(int64 nCoinAge, unsigned int nBits, unsigned int nTime, bool bCoinYearOnly=false);
-int64_t GetProofOfStakeReward_V2(int64 nCoinAge, unsigned int nBits, unsigned int nTime, bool bCoinYearOnly=false);
+int64_t GetProofOfStakeReward_V1(int64_t nCoinAge, int64_t nFees); //params not changed
+int64_t GetProofOfStakeReward_V2(int64_t nCoinAge, int64_t nFees); 
 unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
 unsigned int ComputeMinStake(unsigned int nBase, int64_t nTime, unsigned int nBlockTime);
 int GetNumBlocksOfPeers();
