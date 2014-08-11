@@ -979,7 +979,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     int64_t nSubsidy = 0;
 	
-    if ( nHeight > SWITCH_BOCK_V2 ){
+    if ( pindexBest->nHeight > SWITCH_BOCK_V2 ){
     nSubsidy = GetProofOfStakeReward_V2(int64_t nCoinAge, int64_t nFees);
     }
     else{
